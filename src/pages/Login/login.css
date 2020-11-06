@@ -1,0 +1,53 @@
+body {
+    background-color: #aab2bd;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 5%;
+}
+
+#bemVindo {
+    font-weight: bold;
+}
+
+#textCPF, #senhaText {
+    margin-left: 145px;
+}
+
+#inputCPF {
+    margin-top: 80px;
+}
+
+#botao {
+    margin-left: 250px;
+    margin-top: 2%;
+}
+
+.formBody {
+	border-bottom: 1px solid #1c4e91;
+	border-top: 1px solid #1c4e91;
+	border-left: 1px solid #1c4e91;
+	border-right: 1px solid #1c4e91;
+	width: 66%;
+	height: 873px;
+	margin: 50px auto 100px auto;
+}
+
+
+.formLogin {
+	border-bottom: 1px solid #1c4e91;
+	border-top: 1px solid #1c4e91;
+	border-left: 1px solid #1c4e91;
+	border-right: 1px solid #1c4e91;
+	width: 30%;
+	height: 250px;
+	margin: 70px auto 100px auto;
+    border-radius: 10px;
+    background: #a7c3e8;margin-top: 12%
+}
+
+.form-group .col-sm-5 {
+	margin-left: 140px;
+	width: 70%;
+}
