@@ -21,7 +21,7 @@ export default function Login(props) {
         });
 
         console.log(resp);
-        const rep = resp.json();
+        const rep = await resp.json();
         console.log('rep', rep);
 
         if (resp.status === 200) {
