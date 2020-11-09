@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Col, Input, Row, Button, Label } from 'reactstrap';
 
 import './login.css'
 
@@ -31,26 +32,29 @@ export default function Login(props) {
     }
 
     return (
-        <div>
-            <form id="formLogin">
-                <h1>
-                    <label id="bemVindo">Bem vindo(a) ao Health Time.</label>
-                </h1>
-                <div className="formLogin">
-                    <table>
-                        <tr>
-                            <td><label id="textCPF">CPF:</label>
-                                <input
-                                    id="inputCPF"
-                                    placeholder="CPF"
-                                    onChange={(input, value) => {
-                                        setCpf(input.target.value);
-                                    }}
-                                    required
-                                /></td>
-                        </tr>
+        <body>
 
-                        {/* <tr>
+            <h1>
+                <label id="bemVindo">Bem vindo(a) ao Health Time.</label>
+            </h1>
+            <div className="formLogin">
+                <Row>
+                    <Col xs='6'>
+                        <Label id="textCPF">CPF:</Label>
+                        <Input
+                            id="inputCPF"
+                            name="inputCPF"
+                            placeholder="CPF"
+                            type="text"
+                            onChange={(input, value) => {
+                                setCpf(input.target.value);
+                            }}
+                            required
+                        />
+                    </Col>
+                </Row>
+
+                {/* <tr>
                             <td><label id="senhaText">Senha:</label>
                                 <input
                                     id="senha"
@@ -60,11 +64,15 @@ export default function Login(props) {
                                     }}
                                     required
                                 /></td>
-                        </tr> */}
-                    </table>
-                    <button id="botao" className="btn btn-success" onClick={verifica}>Entrar</button>
-                </div>
-            </form>
-        </div>
+                        </tr> 
+                    </table>*/}
+                <Row>
+                    <Col>
+                        <Button id="botao" color="success" onClick={verifica}>Entrar</Button>
+                    </Col>
+                </Row>
+            </div>
+
+        </body>
     );
 }

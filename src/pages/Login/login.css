@@ -15,12 +15,8 @@ h1 {
     margin-left: 145px;
 }
 
-#inputCPF {
-    margin-top: 80px;
-}
-
 #botao {
-    margin-left: 250px;
+    margin-left: 45%;
     margin-top: 2%;
 }
 
@@ -50,4 +46,13 @@ h1 {
 .form-group .col-sm-5 {
 	margin-left: 140px;
 	width: 70%;
+}
+
+#inputCPF {
+	margin-left: 60%;
+}
+
+#textCPF {
+	margin-top: 30%;
+	margin-left: 100%;
 }
